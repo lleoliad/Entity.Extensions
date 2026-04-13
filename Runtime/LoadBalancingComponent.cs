@@ -7,7 +7,7 @@ namespace Entities.Extensions;
 /// <summary>
 /// Tracks scene load counts and allocates the least-loaded scene for a given scene type.
 /// </summary>
-public class LoadBalancing : Entity
+public class LoadBalancingComponent : Entity
 {
     private readonly Dictionary<uint, int> _sceneLoads = new Dictionary<uint, int>();
 
@@ -33,8 +33,9 @@ public class LoadBalancing : Entity
 
         _sceneLoads[bestGate.Id] = GetSceneLoad(bestGate.Id) + 1;
 
+#if ENTITY_DEBUG
         Log.Info($"Allocated scene {bestGate.Id} for type {bestGate.SceneTypeString} ({sceneType}). Current load: {_sceneLoads[bestGate.Id]}");
-
+#endif
         return bestGate;
     }
 

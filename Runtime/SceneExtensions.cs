@@ -16,6 +16,6 @@ public static class SceneExtensions
     /// <returns>The selected scene configuration.</returns>
     public static SceneConfig Allocator(this Scene scene, int sceneType)
     {
-        return scene.GetComponent<LoadBalancing>().Allocator(sceneType);
+        return scene.GetComponent<LoadBalancingComponent>().Allocator(sceneType);
     }
 }
