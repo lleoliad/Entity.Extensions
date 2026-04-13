@@ -1,0 +1,42 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="28" y1="20" x2="230" y2="236" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#102A43"/>
+      <stop offset="0.55" stop-color="#0F4C5C"/>
+      <stop offset="1" stop-color="#0B7285"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(196 72) rotate(132.839) scale(162.016)">
+      <stop stop-color="#9BE7FF" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#9BE7FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glyph" x1="70" y1="68" x2="162" y2="188" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DFF7FF"/>
+    </linearGradient>
+    <filter id="shadow" x="34" y="40" width="194" height="176" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="8"/>
+      <feGaussianBlur stdDeviation="9"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0156863 0 0 0 0 0.101961 0 0 0 0 0.172549 0 0 0 0.28 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
+    </filter>
+  </defs>
+  <rect x="16" y="16" width="224" height="224" rx="52" fill="url(#bg)"/>
+  <rect x="16" y="16" width="224" height="224" rx="52" fill="url(#glow)"/>
+  <path d="M50 200C70 164 115 146 161 153C188 157 210 171 222 189" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="6" stroke-linecap="round"/>
+  <g filter="url(#shadow)">
+    <path d="M84 62C84 58.6863 86.6863 56 90 56H150C153.314 56 156 58.6863 156 62V84H104C100.686 84 98 86.6863 98 90V106H149C152.314 106 155 108.686 155 112V126C155 129.314 152.314 132 149 132H98V150C98 153.314 100.686 156 104 156H156V178C156 181.314 153.314 184 150 184H90C86.6863 184 84 181.314 84 178V62Z" fill="url(#glyph)"/>
+    <path d="M160 80H182" stroke="#8BE9FF" stroke-width="12" stroke-linecap="round"/>
+    <path d="M160 128H192" stroke="#59D8B8" stroke-width="12" stroke-linecap="round"/>
+    <path d="M160 176H182" stroke="#FFB86B" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="194" cy="80" r="16" fill="#8BE9FF"/>
+    <circle cx="206" cy="128" r="18" fill="#59D8B8"/>
+    <circle cx="194" cy="176" r="16" fill="#FFB86B"/>
+    <circle cx="194" cy="80" r="7" fill="#E9FBFF"/>
+    <circle cx="206" cy="128" r="8" fill="#F3FFF9"/>
+    <circle cx="194" cy="176" r="7" fill="#FFF5E8"/>
+  </g>
+</svg>
